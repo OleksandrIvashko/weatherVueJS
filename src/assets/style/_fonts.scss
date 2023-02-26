@@ -1,0 +1,14 @@
+@mixin fontFace($FontName, $FontFolderName, $FontPathName, $FontWeight) {
+  @font-face {
+    font-family: '#{$FontName}';
+    src: url('@/assets/fonts/#{$FontFolderName}/#{$FontPathName}.woff') format('woff'),
+    url('@/assets/fonts/#{$FontFolderName}/#{$FontPathName}.ttf') format('truetype');
+    font-weight: $FontWeight;
+    font-display: swap;
+  }
+}
+
+@include fontFace("Montserrat", "Montserrat", "Montserrat-Bold", 700);
+@include fontFace("Montserrat", "Montserrat", "Montserrat-SemiBold", 600);
+@include fontFace("Montserrat", "Montserrat", "Montserrat-Medium", 500);
+@include fontFace("Montserrat", "Montserrat", "Montserrat-Regular", 400);
