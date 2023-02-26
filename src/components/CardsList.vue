@@ -88,7 +88,6 @@ const removeCard = (card) => {
     }
 
     &-item {
-        padding-bottom: 20px;
         margin-bottom: 20px;
         border-bottom: 2px solid $black;
 
@@ -104,7 +103,6 @@ const removeCard = (card) => {
     }
 
     &-btn {
-        margin-top: 10px;
         width: 100%;
     }
 

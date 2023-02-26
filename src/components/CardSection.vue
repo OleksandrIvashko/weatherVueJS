@@ -99,8 +99,8 @@ const initWeatherByDefault = () => {
             },
             () => {
                 getWeather({
-                    lat: 50,
-                    lon: 50
+                    lat: 50.4333,
+                    lon: 30.5167
                 });
             });
     } else {
@@ -243,7 +243,7 @@ watch(searchValue, () => {
 
 <style scoped lang="scss">
 .card-section {
-
+    padding-bottom: 20px;
     &::v-deep {
         .card {
             width: 35%;
